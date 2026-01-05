@@ -1,0 +1,134 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuContainer{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #0F0F10;
+    transform: translateX(100%);
+    transition: transform 0.35s ease-in-out;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    z-index: 1000;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.closed {
+    transform: translateX(100%);
+}
+
+.openMenuTitle {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.closeButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.closeButton {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #8a8a8e;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menuButton {
+    background: transparent;
+    color: white;
+    border: none;
+    text-align: start;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.langContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+}
+
+.langContainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    color: #8a8a8e;
+    letter-spacing: 0.1rem;
+}
+
+.langOptionsContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.langOption {
+    background: transparent;
+    border: none;
+    color: #8a8a8e;
+    letter-spacing: 0.1rem;
+}
+
+.iconsContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.iconContainer {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+}
+
+.navTitle {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.navContactButton {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border-color: white;
+    color: #0F0F10;
+    font-weight: bold;
+}
