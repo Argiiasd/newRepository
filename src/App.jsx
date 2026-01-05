@@ -1,4 +1,4 @@
-import { MobileMenu } from "./components/mobileMenu/mobileMenu";
+import { MobileMenu } from "./components/mobileMenu/MobileMenu";
 import { HeroSection } from "./components/heroSection/HeroSection";
 import "./App.css";
 
