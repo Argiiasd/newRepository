@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import linkedinIcon from "../../assets/linkedin.png";
+import linkedinIcon from "../../assets/linkedIn.png";
 import gmailIcon from "../../assets/gmail.png";
 import styles from "./mobileMenu.module.css";
 
