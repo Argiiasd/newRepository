@@ -8,6 +8,7 @@ import Express from "../../assets/Express.png";
 import PostgreSQL from "../../assets/PostgreSQL.png";
 import Git from "../../assets/Git.png";
 import GitHub from "../../assets/GitHub.png";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import styles from "./mySkillsSection.module.css";
 
 export const MySkillsSection = () => {
@@ -66,6 +67,11 @@ export const MySkillsSection = () => {
           <span>GitHub</span>
         </li>
       </ul>
+
+      <div className={styles.viewProjectsButton}>
+        <span>Ver mis proyectos</span>
+        <ExpandMoreIcon />
+      </div>
     </section>
   );
 };
