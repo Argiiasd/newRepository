@@ -1,0 +1,86 @@
+.aboutMeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  gap: 3rem;
+}
+
+.aboutMeContent {
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+.aboutMeImg {
+  width: 100%;
+  max-width: 720px;
+  opacity: 0.5;
+  filter: contrast(0.85) brightness(0.7);
+  transform: translateY(-60px);
+  mask-image: radial-gradient(
+    circle at center,
+    black 45%,
+    transparent 70%
+  );
+}
+
+.aboutMeTitle {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  pointer-events: none;
+  width: 100%;
+}
+
+.aboutMeText {
+  text-align: center;
+}
+
+.aboutMeButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.aboutMeButton2 {
+  padding: 0.75rem 1.75rem;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.aboutMeButton2:hover {
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.aboutMeButton {
+  padding: 0.75rem 1.75rem;
+  background: #ffffff;
+  color: #0f0f10;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.aboutMeButton:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.aboutMeDescription {
+  max-width: 520px;
+  margin: 0 auto 2rem;
+  opacity: 0.7;
+  line-height: 1.6;
+}
