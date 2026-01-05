@@ -1,19 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
   font-family: "Inter", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color: rgba(255, 255, 255, 0.87);
-  background-color: #0F0F10;
+  background-color: #0f0f10;
 }
 
 body {
-  margin: 0;
+  background-color: #0f0f10;
+  background-image: radial-gradient(
+      circle at center,
+      transparent 40%,
+      #0f0f10 75%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  background-attachment: fixed;
 }
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
