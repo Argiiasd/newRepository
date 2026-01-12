@@ -1,0 +1,23 @@
+.myProjectsSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.myProjectsSectionTitle {
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  pointer-events: none;
+  width: 100%;
+}
+
+.myProjectsSectionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 90%;
+}
